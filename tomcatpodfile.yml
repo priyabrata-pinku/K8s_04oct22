@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: first-container
-    image: nginx
+    image: tomcat:8.5.37-jre8
     ports:
       - containerPort: 80
