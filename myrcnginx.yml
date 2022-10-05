@@ -6,13 +6,11 @@ spec:
   replicas: 3
   selector:
     app: mynginxapp
-    version: 1.0
   template:
     metadata:
       name: mynginxapp
       labels:
         app: mynginxapp
-        version: 1.0
     spec:
       containers:
         - name: mynginxapp
