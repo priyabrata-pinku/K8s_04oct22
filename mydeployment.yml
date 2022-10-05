@@ -1,8 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myonlinebooking
+  name: myonlinebooking-deploy
+  labels:
+    app: myonlinebooking
 spec:
+  replicas: 5
   selector:
     matchLabels:
       app: myonlinebooking
