@@ -13,7 +13,7 @@ spec:
         app: mytomcat-app
     spec:
       containers:
-        - name: mytomcat-app
+        - name: mytomcat-container
           image: tomcat:8.5.37-jre8
           ports:
             - containerPort: 8080

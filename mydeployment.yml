@@ -15,7 +15,7 @@ spec:
         app: myonlinebooking
     spec:
       containers:
-      - name: myonlinebooking
+      - name: myonlinebooking-container
         image: maha4iac/myonlinebooking:1
         ports:
         - containerPort: 8080

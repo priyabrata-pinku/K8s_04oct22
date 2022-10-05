@@ -6,7 +6,7 @@ metadata:
     name: v1
 spec:
   containers:
-  - name: tomcat
+  - name: tomcat-container
     image: tomcat:8.5.37-jre8
     ports:
       - containerPort: 8080
