@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mytomcat_app
+  name: mytomcatapp
   labels:
     name: v1
 spec:
