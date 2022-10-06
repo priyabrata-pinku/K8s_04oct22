@@ -5,10 +5,10 @@ metadata:
   labels:
     app: myonlinebooking
 spec:
-  selector:
-    app: myonlinebooking
   type: NodePort
   ports:
   - port: 8080
     targetPort: 30001
     protocol: TCP
+  selector:
+    app: myonlinebooking
