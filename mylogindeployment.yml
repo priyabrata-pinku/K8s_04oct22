@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myonlinebooking-deploy
+  labels:
+    app: myonlinebooking
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myonlinebooking
+  template:
+    metadata:
+      labels:
+        app: myonlinebooking
+    spec:
+      containers:
+      - name: myonlinebooking-container
+        image: priyabratapinku7/mahalogin06sept22:1
+        ports:
+        - containerPort: 8080
